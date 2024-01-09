@@ -1,11 +1,24 @@
 
 import React from "react";
 import './../styles/App.css';
+import React, { useState } from "react";
 
 const App = () => {
   return (
     <div>
-        {/* Do not remove the main div */}
+      function MyButton() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1)
+  }
+
+  return (
+    <button onClick={handleClick}>
+      Clicked {count} times
+    </button>
+  );
+}
     </div>
   )
 }
