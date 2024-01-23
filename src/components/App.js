@@ -12,7 +12,7 @@ function addCount(){
 
   return(<div>
     <p>
-      Button Clicked {count} times
+      Button clicked {count} times
     </p>
     <button onClick={addCount}>Click me</button>
   </div>)
